@@ -43,7 +43,7 @@ public class AddSongActivity extends AppCompatActivity implements View.OnClickLi
         @Override
         protected String doInBackground(String...params)
         {
-            String postData = "song="+params[0] + "artist="+params[1] + "year"+params[2];
+            String postData = "song="+params[0] + "artist="+params[1] + "year="+params[2];
 
             try
             {
@@ -56,7 +56,7 @@ public class AddSongActivity extends AppCompatActivity implements View.OnClickLi
 
             return "Error: something went wrong";
 
-            return null;
+
         }
     }
 
